@@ -30,7 +30,7 @@ jobs:
         run: sudo apt-get install -y libnss3 libgconf-2-4
 
       - name: Run tests and generate coverage
-        run: npm run test -- --code-coverage
+        run: npm run test -- --code-coverage --watch=false
 
       - name: Run SonarCloud Scan
         env:

@@ -22,9 +22,9 @@ module.exports = function (config) {
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
-    autoWatch: true,
-    browsers: ['ChromeHeadless'], // Use ChromeHeadless instead of Chrome
-    singleRun: false,
-    restartOnFileChange: true
+    autoWatch: false, // Set autoWatch to false
+    browsers: ['ChromeHeadless'],
+    singleRun: true, // Ensure singleRun is true
+    restartOnFileChange: false
   });
 };
