@@ -23,6 +23,12 @@ jobs:
         with:
           node-version: '16' # Specify your node version
 
+      - name: Set up Java 17
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'adopt'
+          java-version: '17'
+
       - name: Install dependencies
         run: npm install
 
