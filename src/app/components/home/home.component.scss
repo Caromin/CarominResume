@@ -1,0 +1,34 @@
+.hardsetMarginTop {
+    margin-top: 15%;
+}
+
+.titleSize {
+    font-size: 76px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.intro {
+    overflow: visible;
+    width: 500px;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.profileImg {
+    min-width: 300px;
+    max-width: 300px;
+    height: 300px;
+    background-image: url('../../../assets/profile.jpeg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.hardsetMarginLeft {
+    min-width: 140px;
+}
+
+.h1 {
+    font-size: 8rem;
+    line-height: 1em;
+}

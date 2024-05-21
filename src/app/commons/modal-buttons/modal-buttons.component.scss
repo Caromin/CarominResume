@@ -1,0 +1,20 @@
+button {
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    min-width: 110px;
+    transition: color 0.4s ease-out, background-color 0.4s ease-out;
+    border-radius: 4px;
+    overflow: hidden;
+    border: none;
+    background-color: white;
+}
+
+button:hover, button:focus {
+    background-color: black;
+    color: white;
+}
+
+.material-icons {
+    font-size: 36px;
+}
