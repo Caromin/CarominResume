@@ -5,25 +5,25 @@
             <span>DOWNLOAD CV</span>
         </div>
     </button>
-    <button class="text-center me-2" title="ABOUT ME" (click)="open('aboutme')">
+    <button *ngIf="value!='aboutme'" class="text-center me-2" title="ABOUT ME" (click)="open('aboutme')">
         <div class="material-icons">person</div>
         <div>
             <span>ABOUT ME</span>
         </div>
     </button>
-    <button class="text-center me-2" title="RESUME" (click)="open('resume')">
+    <button *ngIf="value!='resume'" class="text-center me-2" title="RESUME" (click)="open('resume')">
         <div class="material-icons">chrome_reader_mode</div>
         <div>
             <span>RESUME</span>
         </div>
     </button>
-    <button class="text-center me-2" title="PORTFOLIO" (click)="open('portfolio')">
+    <button *ngIf="value!='portfolio'" class="text-center me-2" title="PORTFOLIO" (click)="open('portfolio')">
         <div class="material-icons">lightbulb</div>
         <div>
             <span>PORTFOLIO</span>
         </div>
     </button>
-    <button class="text-center me-2" title="CONTACT" (click)="open('contact')">
+    <button *ngIf="value!='contact'" class="text-center me-2" title="CONTACT" (click)="open('contact')">
         <div class="material-icons">alternate_email</div>
         <div>
             <span>CONTACT</span>

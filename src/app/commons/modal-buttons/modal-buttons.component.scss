@@ -1,8 +1,8 @@
 button {
     color: black;
     text-decoration: none;
-    padding: 8px;
-    min-width: 110px;
+    padding: 5px;
+    min-width: 100px;
     transition: color 0.4s ease-out, background-color 0.4s ease-out;
     border-radius: 4px;
     overflow: hidden;
@@ -16,5 +16,5 @@ button:hover, button:focus {
 }
 
 .material-icons {
-    font-size: 36px;
+    font-size: 34px;
 }

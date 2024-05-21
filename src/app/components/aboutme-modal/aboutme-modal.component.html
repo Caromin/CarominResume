@@ -1,1 +1,18 @@
-<p>aboutme-modal works!</p>
+<div class="modalBanner">
+    <app-modal-buttons id="fixedIcons" [value]="data.value"></app-modal-buttons>
+</div>
+<div class="w-100">
+    <app-modal-title [title]="title"></app-modal-title>
+    <div class="text-center mt-3">
+        <span class="subHeader">INTRODUCTION</span>
+    </div>
+</div>
+<div class="container">
+    {{userInfo.aboutmePara1}} 
+    <br><br>
+    {{userInfo.introPara1}} {{userInfo.aboutmePara2}}
+    <br><br>
+    {{userInfo.aboutmePara3}}
+    <br><br>
+    {{userInfo.aboutmePara4}}<span class="fw-bold">{{userInfo.email}}.</span>
+</div>

@@ -13,6 +13,7 @@ import { PortfolioModalComponent } from './components/portfolio-modal/portfolio-
 import { ResumeModalComponent } from './components/resume-modal/resume-modal.component';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ModalTitleComponent } from './commons/modal-title/modal-title.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AboutmeModalComponent,
     ContactModalComponent,
     PortfolioModalComponent,
-    ResumeModalComponent
+    ResumeModalComponent,
+    ModalTitleComponent
   ],
   imports: [
     BrowserModule,

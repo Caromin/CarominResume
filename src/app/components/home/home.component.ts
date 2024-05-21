@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UserInfoService } from 'src/app/services/user-info.service';
 
 @Component({
   selector: 'app-home',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  constructor(protected userInfo: UserInfoService) {}
 }

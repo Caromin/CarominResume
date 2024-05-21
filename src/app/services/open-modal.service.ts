@@ -29,15 +29,17 @@ export class OpenModalService {
         break;
     }
 
-    this.openModal(component);
+    this.openModal(component, value);
   }
 
-  openModal(component: any) {
+  openModal(component: any, modalType: string) {
     let dialogRef = this.dialog.open(component, {
       maxHeight: '100vh',
       maxWidth: '100vw',
       height: '1100px',
-      width: '800px'
+      width: '800px',
+      autoFocus: false,
+      data: {value: modalType}
     })
   }
 }
