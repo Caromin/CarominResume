@@ -7,7 +7,8 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
   styleUrls: ['./portfolio-modal.component.scss']
 })
 export class PortfolioModalComponent {
-  
+  protected title = "Portfolio";
+
   constructor(
     public dialogRef: MatDialogRef<PortfolioModalComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any,
