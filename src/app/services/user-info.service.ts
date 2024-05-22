@@ -17,20 +17,24 @@ export class UserInfoService {
   public aboutmePara4 = `If you have any questions, please do not hesitate to get in touch via `
 
   public resumeArr: any[] = [
-    { dateRange: 'Dec 2022 - Present', title: "Consultant, Full Stack Web Developer", company: 'Accenture Federal Services', 
-      summary: `Responsible for the overall technological direction in all aspects of the company’s operation and 
-      for the direct communication with upper management and shareholders. Part of a team to successfully navigate the company 
-      from a startx-up to one of Japan’s fastest-growing inbound tourism-related media companies.`
+    { dateRange: 'Dec 2022 - Present', title: "Consultant, Full Stack Developer", company: 'Accenture Federal Services (AFS)', 
+      summary: `Lead developer in a multi-year complete redesign and upgrade of an existing application into a new Azure based platform. Using Java, Angular 16, Azure SQL. 
+      Participated in discussions with different Product Owners on new functionality integration. Writing and reviewing official documentation for applications. Examples are Database Dictionary, Release build documents, and repository readmes. 
+      Expanded a shared API application to allow other application to have access to additional endpoint datasets.`
     },
-    { dateRange: 'Mar 2021 - Nov 2022', title: "Senior Analyst, Full Stack Web Developer", company: 'Accenture Federal Services', 
-    summary: `Responsible for the overall technological direction in all aspects of the company’s operation and 
-    for the direct communication with upper management and shareholders. Part of a team to successfully navigate the company 
-    from a startx-up to one of Japan’s fastest-growing inbound tourism-related media companies.`
+    { dateRange: 'Mar 2021 - Nov 2022', title: "Senior Analyst, Full Stack Developer", company: 'Accenture Federal Services (AFS)', 
+    summary: `Involved in multiple different application development and release cycles. Writing Jasmine and Junit tests to meet a minimum of 80% test coverage for Front and Backend testing. 
+    Was the primary developer for most development work. Tasked as one of a few developers to review incoming code pull requests for application code changes. 
+    Assisted other developers in troubleshooting, debugging, and mentorship.`
     }, 
-    { dateRange: 'Nov 2019 - Mar 2021', title: "Software Engineer",  company: 'Revature', 
-    summary: `Responsible for the overall technological direction in all aspects of the company’s operation and 
-    for the direct communication with upper management and shareholders. Part of a team to successfully navigate the company 
-    from a startx-up to one of Japan’s fastest-growing inbound tourism-related media companies.`
+    { dateRange: 'Nov 2019 - Mar 2021', title: "Junior Software Engineer",  company: 'Revature', 
+    summary: `Developer on multiple different applications that used different languages: Used Java, C# with frameworks: Angular JS/5, and Webforms. 
+    Participated in different application releases to address bugs and implement features. Worked in both Kanban and Scrum development to address bugs and implement new features.`
     }
+  ];
+
+  public educationArr: any[] = [
+    { date: 'Dec 2017', degree: 'Web Development Boot Camp', school: "University of Central Florida"},
+    { date: 'Dec 2014', degree: 'Dual Bachelor of Arts: Criminal Justice, Psychology', school: "University of North Florida"}
   ];
 }

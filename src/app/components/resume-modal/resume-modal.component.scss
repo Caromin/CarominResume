@@ -8,10 +8,17 @@
     min-width: 20px;
 }
 
-.shortBorder {
-    min-height: 40px;
+.shortBorder, .shortEducationBorder {
     min-width: 20px;
     border-right: 3px solid #F9F9F9;
+}
+
+.shortBorder {
+    min-height: 40px;
+}
+
+.shortEducationBorder {
+    min-height: 60px;
 }
 
 .emptyShortBorder {

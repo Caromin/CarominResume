@@ -43,9 +43,48 @@
                         {{resume.company | uppercase}}
                     </div>
                     <div>
-                        Responsible for the overall technological direction in all aspects of the company’s 
-                        operation and for the direct communication with upper management and shareholders. Part of a team to successfully navigate the company 
-                        from a startx-up to one of Japan’s fastest-growing inbound tourism-related media companies.
+                        {{resume.summary}}
+                    </div>
+                </div>
+            </span>
+        </div>
+    </div>
+    <div class="d-flex flex-row" *ngFor="let education of userInfo.educationArr; index as i">
+        <div class="me-2">
+            <span *ngIf="i == 0">
+                <div class="d-flex justify-content-end mb-2">
+                    <div class="material-icons">laptop_chromebook</div>
+                </div>
+                <div class="timelineBorder">
+                    <div class="shortBorder"></div>
+                </div>
+            </span>
+            <div class="d-flex justify-content-center ms-1">
+                <div class="material-icons grayCircle">circle</div>
+            </div>
+            <div class="timelineBorder">
+                <div class="shortEducationBorder"></div>
+            </div>        
+        </div>
+        <div class="mt-2">
+            <span *ngIf="i == 0">
+                <div class="ms-2 fw-bold">EDUCATION</div>
+                <div class="timelineBorder">
+                    <div class="emptyShortBorder"></div>
+                </div> 
+            </span>
+            <span>
+                <div class="ms-1 mb-2">
+                    <span class="dateRange">
+                        {{education.date | uppercase}}
+                    </span>
+                </div>
+                <div class="ms-3">
+                    <div class="mb-1 fw-bold">
+                        {{education.degree | uppercase}}
+                    </div>
+                    <div class="greenText mb-2">
+                        {{education.school | uppercase}}
                     </div>
                 </div>
             </span>
