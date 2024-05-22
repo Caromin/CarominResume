@@ -3,17 +3,20 @@
 }
 
 .innerBorder {
-    min-height: 200px;
-    border-right: 3px solid #525252;
+    min-height: 180px;
+    border-right: 3px solid #F9F9F9;
+    min-width: 20px;
 }
 
 .shortBorder {
     min-height: 40px;
-    border-right: 3px solid #525252;
+    min-width: 20px;
+    border-right: 3px solid #F9F9F9;
 }
 
 .emptyShortBorder {
     min-height: 57px;
+    min-width: 20px;
 }
 
 .dateRange {
@@ -28,10 +31,21 @@
     font-size: 24px;
 }
 
+
+.grayCircle {
+    color: #f1f1f1;
+    font-size: 24px;
+}
+
 .greenText {
     color: #4ECE99;
 }
 
 .resumeFontSize {
-    font-size: 14px !important;
+    font-size: 13px !important;
+}
+
+.container {
+    margin: 5%;
+    max-width: fit-content;
 }

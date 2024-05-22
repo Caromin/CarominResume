@@ -16,5 +16,21 @@ export class UserInfoService {
   public aboutmePara3 = "I am originally from San Francisco, CA and currently reside in Jacksonville, FL. I have been involved in Web Development since 2018."
   public aboutmePara4 = `If you have any questions, please do not hesitate to get in touch via `
 
-  constructor() { }
+  public resumeArr: any[] = [
+    { dateRange: 'Dec 2022 - Present', title: "Consultant, Full Stack Web Developer", company: 'Accenture Federal Services', 
+      summary: `Responsible for the overall technological direction in all aspects of the company’s operation and 
+      for the direct communication with upper management and shareholders. Part of a team to successfully navigate the company 
+      from a startx-up to one of Japan’s fastest-growing inbound tourism-related media companies.`
+    },
+    { dateRange: 'Mar 2021 - Nov 2022', title: "Senior Analyst, Full Stack Web Developer", company: 'Accenture Federal Services', 
+    summary: `Responsible for the overall technological direction in all aspects of the company’s operation and 
+    for the direct communication with upper management and shareholders. Part of a team to successfully navigate the company 
+    from a startx-up to one of Japan’s fastest-growing inbound tourism-related media companies.`
+    }, 
+    { dateRange: 'Nov 2019 - Mar 2021', title: "Software Engineer",  company: 'Revature', 
+    summary: `Responsible for the overall technological direction in all aspects of the company’s operation and 
+    for the direct communication with upper management and shareholders. Part of a team to successfully navigate the company 
+    from a startx-up to one of Japan’s fastest-growing inbound tourism-related media companies.`
+    }
+  ];
 }

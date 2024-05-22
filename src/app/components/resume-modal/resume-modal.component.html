@@ -1,28 +1,30 @@
 <div class="modalBanner">
     <app-modal-buttons id="fixedIcons" [value]="data.value"></app-modal-buttons>
 </div>
-<div class="w-100 mb-4">
+<div class="w-100 mb-2">
     <app-modal-title [title]="title"></app-modal-title>
 </div>
 <div class="container resumeFontSize">
-    <div class="d-flex flex-row">
+    <div class="d-flex flex-row" *ngFor="let resume of userInfo.resumeArr; index as i">
         <div class="me-2">
-            <div class="d-flex justify-content-end mb-2">
-                <div class="material-icons">business_center</div>
-            </div>
-            <div class="timelineBorder">
-                <div class="shortBorder"></div>
-            </div>
+            <span *ngIf="i == 0">
+                <div class="d-flex justify-content-end mb-2">
+                    <div class="material-icons">business_center</div>
+                </div>
+                <div class="timelineBorder">
+                    <div class="shortBorder"></div>
+                </div>
+            </span>
             <div class="d-flex justify-content-center ms-1">
-                <div class="material-icons greenCircle">circle</div>
+                <div [ngClass]="{'grayCircle': i > 0, 'greenCircle': i == 0}" class="material-icons">circle</div>
             </div>
             <div class="timelineBorder">
                 <div class="innerBorder"></div>
             </div>        
         </div>
         <div class="mt-2">
-            <span>
-                <div>WORK HISTORY</div>
+            <span *ngIf="i == 0">
+                <div class="ms-2 fw-bold">WORK HISTORY</div>
                 <div class="timelineBorder">
                     <div class="emptyShortBorder"></div>
                 </div> 
@@ -30,15 +32,15 @@
             <span>
                 <div class="ms-1 mb-2">
                     <span class="dateRange">
-                        2022 - Present
+                        {{resume.dateRange | uppercase}}
                     </span>
                 </div>
                 <div class="ms-3">
-                    <div class="mb-1">
-                        Consultant, Full Stack Web Developer
+                    <div class="mb-1 fw-bold">
+                        {{resume.title | uppercase}}
                     </div>
                     <div class="greenText mb-2">
-                        Accenture Federal Services
+                        {{resume.company | uppercase}}
                     </div>
                     <div>
                         Responsible for the overall technological direction in all aspects of the company’s 
