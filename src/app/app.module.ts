@@ -14,6 +14,11 @@ import { ResumeModalComponent } from './components/resume-modal/resume-modal.com
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ModalTitleComponent } from './commons/modal-title/modal-title.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatStepperModule} from '@angular/material/stepper';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -32,7 +37,13 @@ import { ModalTitleComponent } from './commons/modal-title/modal-title.component
     BrowserAnimationsModule,
     MatDialogModule,
     AppRoutingModule,
-    CommonModule
+    CommonModule,
+    MatButtonModule,
+    MatStepperModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent],

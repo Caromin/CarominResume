@@ -1,0 +1,37 @@
+.timelineBorder {
+    padding-right: 15px;
+}
+
+.innerBorder {
+    min-height: 200px;
+    border-right: 3px solid #525252;
+}
+
+.shortBorder {
+    min-height: 40px;
+    border-right: 3px solid #525252;
+}
+
+.emptyShortBorder {
+    min-height: 57px;
+}
+
+.dateRange {
+    color: #4ECE99;
+    border: 1px solid #4ECE99;
+    border-radius: 8px;
+    padding: 4px 8px;
+}
+
+.greenCircle {
+    color: #4ECE99;
+    font-size: 24px;
+}
+
+.greenText {
+    color: #4ECE99;
+}
+
+.resumeFontSize {
+    font-size: 14px !important;
+}
