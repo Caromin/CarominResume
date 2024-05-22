@@ -33,13 +33,15 @@ export class OpenModalService {
   }
 
   openModal(component: any, modalType: string) {
-    let dialogRef = this.dialog.open(component, {
+    this.dialog.closeAll();
+
+    this.dialog.open(component, {
       maxHeight: '100vh',
       maxWidth: '100vw',
       height: '1100px',
       width: '800px',
       autoFocus: false,
       data: {value: modalType}
-    })
+    }).afterClosed().subscribe(_result => {});
   }
 }
