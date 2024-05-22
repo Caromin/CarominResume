@@ -7,6 +7,7 @@ export class UserInfoService {
   public firstName = "Christian";
   public lastName = "Aromin";
   public email = "caromin19@gmail.com";
+  public linkedin = "https://www.linkedin.com/in/caromin/";
 
   public introPara1 = "I am a forward-thinking IT professional with team based leadership experience with a background in software development.";
   public introPara2 = "Thank you for visiting my online resume, if you have any questions, please don't hesitate to reach out!";
