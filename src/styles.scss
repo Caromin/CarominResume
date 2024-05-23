@@ -58,6 +58,11 @@ body { margin: 0; font-family: 'Poppins', sans-serif }
         width: 400px !important;
         font-size: 20px !important;
     }
+
+    .modalBanner {
+        min-height: auto;
+        max-height: none;
+    }
 }
 
 @media (max-width: 430px) {
