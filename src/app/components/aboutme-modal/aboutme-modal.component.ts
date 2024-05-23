@@ -12,6 +12,5 @@ export class AboutmeModalComponent {
   
   constructor(
     public dialogRef: MatDialogRef<AboutmeModalComponent>, protected userInfo: UserInfoService,
-    @Inject(MAT_DIALOG_DATA) public data: any,
-  ) {}
+    @Inject(MAT_DIALOG_DATA) public data: any) {}
 }

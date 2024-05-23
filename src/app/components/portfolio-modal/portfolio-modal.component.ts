@@ -10,7 +10,5 @@ export class PortfolioModalComponent {
   protected title = "Portfolio";
 
   constructor(
-    public dialogRef: MatDialogRef<PortfolioModalComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: any,
-  ) {}
+    public dialogRef: MatDialogRef<PortfolioModalComponent>,@Inject(MAT_DIALOG_DATA) public data: any) {}
 }

@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ModalCloseComponent } from './modal-close.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 describe('ModalCloseComponent', () => {
   let component: ModalCloseComponent;
@@ -8,7 +9,8 @@ describe('ModalCloseComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ModalCloseComponent]
+      declarations: [ModalCloseComponent],
+      imports: [MatDialogModule]
     });
     fixture = TestBed.createComponent(ModalCloseComponent);
     component = fixture.componentInstance;

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-modal-close',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class ModalCloseComponent {
 
+  constructor(public dialog: MatDialog) { }
+
+  closeModal() {
+    this.dialog.closeAll();
+  }
 }

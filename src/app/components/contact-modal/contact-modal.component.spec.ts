@@ -4,6 +4,7 @@ import { ContactModalComponent } from './contact-modal.component';
 import { MAT_DIALOG_DATA, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import { ModalButtonsComponent } from 'src/app/commons/modal-buttons/modal-buttons.component';
 import { ModalTitleComponent } from 'src/app/commons/modal-title/modal-title.component';
+import { ModalCloseComponent } from 'src/app/commons/modal-close/modal-close.component';
 
 describe('ContactModalComponent', () => {
   let component: ContactModalComponent;
@@ -13,7 +14,8 @@ describe('ContactModalComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ContactModalComponent, 
         ModalButtonsComponent,
-        ModalTitleComponent
+        ModalTitleComponent,
+        ModalCloseComponent
       ],
       imports: [MatDialogModule],
       providers: [
