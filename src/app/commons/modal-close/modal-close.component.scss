@@ -12,3 +12,9 @@
     align-items: center;
     cursor: pointer;
 }
+
+@media (max-width: 600px) {
+    .x-button {
+        top: 50px;
+    }
+}
