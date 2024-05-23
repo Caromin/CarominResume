@@ -6,7 +6,7 @@
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=Caromin_ResumeTemplatev2&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=Caromin_ResumeTemplatev2)
 [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=Caromin_ResumeTemplatev2&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=Caromin_ResumeTemplatev2)
 
-[Website](https://resume-templatev2.vercel.app/)
+[Website](https://caromin-resume.vercel.app/)
 
 
 ### Technology Used
