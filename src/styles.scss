@@ -32,6 +32,10 @@ body { margin: 0; font-family: 'Poppins', sans-serif }
     display: none;
 }
 
+.modalFooter {
+    height: 80px;
+}
+
 @media (max-width: 1000px) {
     .mobileBanner {
       display: block;
