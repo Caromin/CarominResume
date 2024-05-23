@@ -14,9 +14,8 @@ describe('ExportService', () => {
     expect(service).toBeTruthy();
   });
 
-  fit('should call exportCV and call click method', () => {
+  it('should call exportCV and call click method', () => {
     const link = document.createElement('a');
-    link.classList.add('downloadBtn');
     link.download = `Resume.pdf`;
 
     const clickMock = jasmine.createSpy('click');
