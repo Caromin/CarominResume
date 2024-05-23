@@ -9,22 +9,26 @@ import { MatDialog } from '@angular/material/dialog';
   providedIn: 'root'
 })
 export class OpenModalService {
-
+  currentSelect = "";
   constructor(public dialog: MatDialog) { }
 
   determineModal(value: string) {
     let component;
     switch(value) {
       case('aboutme'):
+        this.currentSelect = 'aboutme';
         component = AboutmeModalComponent;
         break;
       case('resume'):
+        this.currentSelect = 'resume';
         component = ResumeModalComponent;
         break;
       case('portfolio'):
+        this.currentSelect = 'portfolio';
         component = PortfolioModalComponent;
         break;
       case('contact'):
+        this.currentSelect = 'contact';
         component = ContactModalComponent;
         break;
     }
