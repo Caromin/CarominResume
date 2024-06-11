@@ -66,6 +66,11 @@ body { margin: 0; font-family: 'Poppins', sans-serif }
         .customMt5 {
             margin-top: 1rem !important;
         }
+
+        .aboutContainer {
+            height: 350px;
+            overflow-y: auto !important;
+        }
                 
         .h1 {
             font-size: 5rem !important;
