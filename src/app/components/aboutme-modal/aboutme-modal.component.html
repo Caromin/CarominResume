@@ -11,5 +11,5 @@
     <br><br>
     {{userInfo.aboutmePara3}}
     <br><br>
-    {{userInfo.aboutmePara4}}<span class="fw-bold">{{userInfo.email}}.</span>
+    {{userInfo.aboutmePara4}}<a [href]="'mailto:' + userInfo.email" class="fw-bold">{{userInfo.email}}</a>
 </div>

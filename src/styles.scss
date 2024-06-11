@@ -59,7 +59,7 @@ body { margin: 0; font-family: 'Poppins', sans-serif }
     }
     
     @media (max-width: 600px) {
-        .modalBanner {
+        .modalBanner, .mobileBanner {
             min-height: 250px;
             max-height: 250px;
             background-position: top;
