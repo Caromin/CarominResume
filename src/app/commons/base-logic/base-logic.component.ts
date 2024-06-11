@@ -10,7 +10,8 @@ export class BaseLogicComponent implements OnInit {
   public currentModal = "";
 
   constructor(protected userInfo: UserInfoService) {
-  }  
+  }
+  
   ngOnInit() {
     this.userInfo.currentModal.subscribe(modal => {
       this.currentModal = modal;
