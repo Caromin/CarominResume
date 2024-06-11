@@ -47,6 +47,11 @@ body { margin: 0; font-family: 'Poppins', sans-serif }
     .introImage {
         display: none !important;
     }
+
+    .modalBanner {
+        min-height: 300px;
+        max-height: 300px;
+    }
 }
 
 @media (max-width: 600px) {
