@@ -40,6 +40,10 @@ body { margin: 0; font-family: 'Poppins', sans-serif }
     margin-top: 5% !important;
 }
 
+.customMt5 {
+    margin-top: 3rem !important;
+}
+
 @media (max-width: 1000px) {
     .mobileBanner {
       display: block;
@@ -58,7 +62,11 @@ body { margin: 0; font-family: 'Poppins', sans-serif }
         .modalFooter {
             height: 100px;
         }
-        
+
+        .customMt5 {
+            margin-top: 1rem !important;
+        }
+                
         .h1 {
             font-size: 5rem !important;
             }
