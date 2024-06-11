@@ -1,8 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { ExportService } from 'src/app/services/export.service';
 import { OpenModalService } from 'src/app/services/open-modal.service';
-import { BaseLogicComponent } from '../base-logic/base-logic.component';
-import { UserInfoService } from 'src/app/services/user-info.service';
 
 @Component({
   selector: 'app-modal-buttons',
