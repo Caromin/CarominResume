@@ -47,32 +47,32 @@ body { margin: 0; font-family: 'Poppins', sans-serif }
     .introImage {
         display: none !important;
     }
-
-    .modalBanner {
-        min-height: 250px;
-        max-height: 250px;
     }
-
-    .modalFooter {
-        height: 100px;
-    }
-}
-
-@media (max-width: 600px) {
-    .h1 {
-        font-size: 5rem !important;
-    }
-    .intro {
-        overflow-wrap: normal;
-        width: 400px !important;
-        font-size: 20px !important;
-    }
-}
-
-@media (max-width: 430px) {
-    .h1 {
-        font-size: 4rem !important;
-    }
+    
+    @media (max-width: 600px) {
+        .modalBanner {
+            min-height: 250px;
+            max-height: 250px;
+        }
+    
+        .modalFooter {
+            height: 100px;
+        }
+        
+        .h1 {
+            font-size: 5rem !important;
+            }
+            .intro {
+                overflow-wrap: normal;
+                width: 400px !important;
+                font-size: 20px !important;
+                }
+                }
+                
+                @media (max-width: 430px) {
+                    .h1 {
+                        font-size: 4rem !important;
+                        }
     .intro {
         overflow-wrap: normal;
         width: 360px !important;
