@@ -50,9 +50,6 @@
 
 .resumeFontSize {
     font-size: 13px !important;
-}
-
-.container {
-    margin: 5%;
-    max-width: fit-content;
+    height: 450px;
+    overflow-y: auto !important;
 }

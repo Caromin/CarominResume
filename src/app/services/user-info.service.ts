@@ -1,9 +1,11 @@
 import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserInfoService {
+  public currentModal = new Subject<string>();
   public firstName = "Christian";
   public lastName = "Aromin";
   public email = "caromin19@gmail.com";

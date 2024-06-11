@@ -5,7 +5,7 @@ import { UserInfoService } from 'src/app/services/user-info.service';
 @Component({
   selector: 'app-aboutme-modal',
   templateUrl: './aboutme-modal.component.html',
-  styleUrls: ['./aboutme-modal.component.scss']
+  styleUrls: []
 })
 export class AboutmeModalComponent {
   protected title = "About Me";

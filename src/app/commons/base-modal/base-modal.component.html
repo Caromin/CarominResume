@@ -1,0 +1,8 @@
+<div class="modalBanner">
+    <app-modal-close></app-modal-close>
+    <app-modal-buttons id="fixedIcons"></app-modal-buttons>
+</div>
+<app-aboutme-modal *ngIf="currentModal == 'aboutme' || (!currentModal && data.value ==  'aboutme')"></app-aboutme-modal>
+<app-contact-modal *ngIf="currentModal== 'contact' || (!currentModal && data.value ==  'contact')"></app-contact-modal>
+<app-resume-modal *ngIf="currentModal == 'resume' || (!currentModal && data.value ==  'resume')"></app-resume-modal>
+<div class="modalFooter"></div>

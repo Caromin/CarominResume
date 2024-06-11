@@ -1,51 +1,46 @@
 import { Injectable } from '@angular/core';
-import { AboutmeModalComponent } from '../components/aboutme-modal/aboutme-modal.component';
-import { ContactModalComponent } from '../components/contact-modal/contact-modal.component';
-import { PortfolioModalComponent } from '../components/portfolio-modal/portfolio-modal.component';
-import { ResumeModalComponent } from '../components/resume-modal/resume-modal.component';
 import { MatDialog } from '@angular/material/dialog';
+import { BaseModalComponent } from '../commons/base-modal/base-modal.component';
+import { UserInfoService } from './user-info.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class OpenModalService {
   currentSelect = "";
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog, private userInfo: UserInfoService) {}
 
   determineModal(value: string) {
-    let component;
     switch(value) {
       case('aboutme'):
         this.currentSelect = 'aboutme';
-        component = AboutmeModalComponent;
         break;
       case('resume'):
         this.currentSelect = 'resume';
-        component = ResumeModalComponent;
         break;
       case('portfolio'):
         this.currentSelect = 'portfolio';
-        component = PortfolioModalComponent;
         break;
       case('contact'):
         this.currentSelect = 'contact';
-        component = ContactModalComponent;
         break;
     }
 
-    this.openModal(component, value);
+    this.openModal(value);
   }
 
-  openModal(component: any, modalType: string) {
-    this.dialog.closeAll();
+  openModal(modalType: string) {
+    this.userInfo.currentModal.next(modalType);
 
-    this.dialog.open(component, {
-      maxHeight: '100vh',
-      maxWidth: '100vw',
-      height: '1100px',
-      width: '800px',
-      autoFocus: false,
-      data: {value: modalType}
-    }).afterClosed().subscribe(_result => {});
+    if (this.dialog.openDialogs.length == 0) {
+        this.dialog.open(BaseModalComponent, {
+          maxHeight: '100vh',
+          maxWidth: '100vw',
+          height: '1100px',
+          width: '800px',
+          autoFocus: false,
+          data: {value: modalType}
+        }).afterClosed().subscribe(_result => {});
+    }
   }
 }

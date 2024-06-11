@@ -5,7 +5,7 @@ import { UserInfoService } from 'src/app/services/user-info.service';
 @Component({
   selector: 'app-contact-modal',
   templateUrl: './contact-modal.component.html',
-  styleUrls: ['./contact-modal.component.scss']
+  styleUrls: []
 })
 export class ContactModalComponent {
   protected title = "Contact";

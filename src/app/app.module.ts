@@ -19,6 +19,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatButtonModule} from '@angular/material/button';
+import { BaseModalComponent } from './commons/base-modal/base-modal.component';
+import { BaseLogicComponent } from './commons/base-logic/base-logic.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import {MatButtonModule} from '@angular/material/button';
     ContactModalComponent,
     PortfolioModalComponent,
     ResumeModalComponent,
-    ModalTitleComponent
+    ModalTitleComponent,
+    BaseModalComponent,
+    BaseLogicComponent
   ],
   imports: [
     BrowserModule,
