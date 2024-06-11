@@ -53,3 +53,9 @@
     height: 450px;
     overflow-y: auto !important;
 }
+
+@media (max-width: 600px) {
+    .resumeFontSize {
+        height: 400px;
+    }
+}
