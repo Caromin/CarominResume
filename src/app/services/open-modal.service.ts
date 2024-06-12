@@ -36,7 +36,7 @@ export class OpenModalService {
         this.dialog.open(BaseModalComponent, {
           maxHeight: '100vh',
           maxWidth: '100vw',
-          height: '1100px',
+          height: '1050px',
           width: '800px',
           autoFocus: false,
           data: {value: modalType}
