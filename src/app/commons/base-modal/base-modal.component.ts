@@ -9,12 +9,10 @@ import { BaseLogicComponent } from '../base-logic/base-logic.component';
   styleUrls: ['./base-modal.component.scss']
 })
 export class BaseModalComponent extends BaseLogicComponent {
-  protected title = "Test";
 
   constructor(
     public dialogRef: MatDialogRef<BaseModalComponent>, protected override userInfo: UserInfoService,
     @Inject(MAT_DIALOG_DATA) public data: any) {
-      console.log(data);
-    super(userInfo);
-  }
+      super(userInfo);
+    }
 }
