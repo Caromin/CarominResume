@@ -49,6 +49,10 @@ body { margin: 0; font-family: 'Poppins', sans-serif }
     overflow-y: auto !important;
 }
 
+.nounderline {
+    text-decoration: none;
+}
+
 @media (max-width: 1000px) {
     .mobileBanner {
       display: block;
