@@ -53,6 +53,14 @@ body { margin: 0; font-family: 'Poppins', sans-serif }
     text-decoration: none;
 }
 
+@media (max-height: 850px) {
+    .modalBanner, .mobileBanner {
+        min-height: 375px;
+        max-height: 375px;
+        background-position: top;
+    }
+}
+
 @media (max-width: 1000px) {
     .mobileBanner {
       display: block;
