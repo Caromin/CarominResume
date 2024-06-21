@@ -37,6 +37,7 @@ export class UserInfoService {
   ];
 
   public educationArr: any[] = [
+    { date: 'Aug 2022', degree: 'ICAgile Certification', school: "International Consortium for Agile"},
     { date: 'Dec 2017', degree: 'Web Development Boot Camp', school: "University of Central Florida"},
     { date: 'Dec 2014', degree: 'Dual Bachelor of Arts: Criminal Justice, Psychology', school: "University of North Florida"}
   ];
